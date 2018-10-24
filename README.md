@@ -18,7 +18,7 @@ KVM on any Linux distribution | [youtube video link](youtube.com)
 - Laptop should have Hypervisors installed Like VirtualBox,HyperV, KVM or Vmware Workstation
 - Download the Debian cloud images provided by the Debian Cloud Team. Refer the beow tables for the required Links
 
-## Download following images
+## Image downloads
 
 Image format| OS  | hypervisor | Image download Link
 ------------| ----|------------|-------

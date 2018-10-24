@@ -28,6 +28,8 @@ Qcow2| Linux | KVM| https://cloud.debian.org/images/cloud/OpenStack/9.5.6-201810
 
 - Create Cloud-init ISO file
 
+You can use a pre-built cloud-init iso image from https://github.com/ranjithrajaram/debutsav/blob/master/debiancloudinit.iso. Password for the `debian` user will be set as `passw0rd`. 
+
 Create a directory and two files should be created with the following contents. For example, path shown here is `/vm`. Replace the path as per your system configuration
 
         mkdir /vm/debustav
@@ -65,3 +67,5 @@ password: passw0rd
 
 Note incase if you have mentioned a different password in user-data file, then use the same one. `admin` user has sudo access.
 
+## Steps for Windows laptops configured with VirtualBox hypervisor
+## Steps for Windows laptops configured with VMWare workstation

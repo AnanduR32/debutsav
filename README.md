@@ -56,7 +56,7 @@ genisoimage -output debiancloudinit.iso -volid cidata -joliet -rock user-data me
 ~~~
 virt-install --import --name debianvm --memory 1024 --vcpus 1 --disk /vm/new-debian-9.5.6-20181013-openstack-amd64.qcow2,format=qcow2,bus=virtio --disk /vm/debutsav/debiancloudinit.iso,device=cdrom --network bridge=virbr0,model=virtio  --noautoconsole
 ~~~
-- Execute `virt-manager` to access the VM or `virsh console debianvm`. In the virsh command, debianvm is the name of the VM that was created using the `virt-install` command
+- Execute `virt-manager` to access the VM or `virsh console debianvm`. In the virsh command, `debianvm` was the name of the VM that was created using the `virt-install` command. To exit from `virsh command`, use `CTRL+]`
 - To login to the virtual machine, use the following credentials
 ~~~
 username: admin

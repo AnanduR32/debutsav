@@ -23,12 +23,13 @@ KVM on any Linux distribution | [youtube video link](https://youtu.be/yeZk7_c0De
 Image format| OS  | hypervisor | Image download Link
 ------------| ----|------------|-------
 Qcow2| Linux | KVM| https://cloud.debian.org/images/cloud/OpenStack/9.5.6-20181013/debian-9.5.6-20181013-openstack-amd64.qcow2
+VDI|Windows|VirtualBox|https://goo.gl/g9TxN7
 
 ## Steps for Linux distribution configured with KVM
 
 - Create Cloud-init ISO file
 
-You can use a pre-built cloud-init iso image from https://github.com/ranjithrajaram/debutsav/blob/master/debiancloudinit.iso. Password for the `debian` user will be set as `passw0rd`. 
+You can use a pre-built cloud-init iso image by clicking [here](https://github.com/ranjithrajaram/debutsav/blob/master/debiancloudinit.iso?raw=true) . Password for the `debian` user will be set as `passw0rd`. 
 
 Create a directory and two files should be created with the following contents. For example, path shown here is `/vm`. Replace the path as per your system configuration
 
@@ -61,11 +62,28 @@ virt-install --import --name debianvm --memory 1024 --vcpus 1 --disk /vm/new-deb
 - Execute `virt-manager` to access the VM or `virsh console debianvm`. In the virsh command, `debianvm` was the name of the VM that was created using the `virt-install` command. To exit from `virsh command`, use `CTRL+]`
 - To login to the virtual machine, use the following credentials
 ~~~
-username: admin
+username: debian
 password: passw0rd
 ~~~
 
 Note incase if you have mentioned a different password in user-data file, then use the same one. `admin` user has sudo access.
 
 ## Steps for Windows laptops configured with VirtualBox hypervisor
-## Steps for Windows laptops configured with VMWare workstation
+
+- Step 1: Download the pre-built cloud-init iso image by clicking [here](https://github.com/ranjithrajaram/debutsav/blob/master/debiancloudinit.iso?raw=true)
+
+- Step 2: Download the VirtualBox Image by clicking on the following [link](https://goo.gl/g9TxN7)
+
+- Step 3: Go to the VirtualBox GUI and create the debian virtual image. Do not start the virtual Image until the cloud init iso is attached.
+
+
+
+- Step 4: Attach cloud init iso image
+
+
+- Step4: Login to the VM using the follwing credentials
+~~~
+username: debian
+password: passw0rd
+~~~
+

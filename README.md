@@ -24,6 +24,7 @@ Image format| OS  | hypervisor | Image download Link
 ------------| ----|------------|-------
 Qcow2| Linux | KVM| https://cloud.debian.org/images/cloud/OpenStack/9.5.6-20181013/debian-9.5.6-20181013-openstack-amd64.qcow2
 VDI|Windows|VirtualBox|https://goo.gl/g9TxN7
+VDI|Linux|VirtualBox|https://goo.gl/g9TxN7
 
 ## Steps for Linux distribution configured with KVM
 
